@@ -151,31 +151,26 @@
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
+ 
+  const portfolioToggleButton = document.getElementById('portfolio-toggle-btn');
+  const moreProjects = document.querySelectorAll('.more-projects');
+  let showingMore = false;
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+  portfolioToggleButton.addEventListener('click', () => {
+    showingMore = !showingMore;
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+    moreProjects.forEach(project => {
+      project.style.display = showingMore ? 'block' : 'none';
+    });
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
+    portfolioToggleButton.textContent = showingMore ? 'Show Less Projects' : 'View More Projects';
 
-      }, true);
-    }
-
+    // Trigger the 'All' filter to show updated layout (if Isotope or similar is used)
+    const allFilter = document.querySelector('[data-filter="*"]');
+    if (allFilter) allFilter.click();
   });
+
+
 
   /**
    * Initiate portfolio lightbox 
