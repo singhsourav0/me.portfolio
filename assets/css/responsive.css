@@ -1,0 +1,518 @@
+/* Comprehensive Mobile Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  #hero {
+    height: 80vh;
+    margin-top: 50px;
+  }
+
+  #hero h3 {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  #hero h1 {
+    font-size: clamp(24px, 6vw, 36px);
+  }
+
+  #hero h2 {
+    font-size: clamp(14px, 3vw, 18px);
+  }
+
+  .hero-profile-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .github-layout {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+    position: static;
+    order: 0;
+    top: auto;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-name {
+    font-size: 18px;
+  }
+
+  .profile-username {
+    font-size: 13px;
+  }
+
+  .profile-bio {
+    font-size: 12px;
+  }
+
+  .profile-stats {
+    gap: 15px;
+  }
+
+  .profile-links {
+    gap: 6px;
+  }
+
+  .profile-link {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .content-card {
+    padding: 25px;
+    border-radius: 8px;
+  }
+
+  .section-title h3 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .expertise-item {
+    padding: 20px;
+  }
+
+  .expertise-item .icon i {
+    font-size: 36px;
+  }
+
+  .expertise-item h4 {
+    font-size: 15px;
+  }
+
+  .expertise-item p {
+    font-size: 12px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+  }
+
+  .skill-item {
+    padding: 14px;
+  }
+
+  .skill-item i {
+    font-size: 24px;
+  }
+
+  .skill-item h3 {
+    font-size: 11px;
+  }
+
+  .experience-timeline {
+    gap: 15px;
+  }
+
+  .experience-item {
+    padding: 18px;
+  }
+
+  .experience-header h4 {
+    font-size: 14px;
+  }
+
+  .experience-header .company {
+    font-size: 12px;
+  }
+
+  .experience-details li {
+    font-size: 12px;
+  }
+
+  .project-box {
+    min-height: 200px;
+    padding: 18px;
+  }
+
+  .project-content h4 {
+    font-size: 14px;
+  }
+
+  .project-content p {
+    font-size: 12px;
+  }
+
+  .project-buttons {
+    gap: 8px;
+  }
+
+  .project-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .footer-section {
+    min-width: auto;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  #header .container {
+    padding: 0 12px;
+  }
+
+  #header .logo a {
+    font-size: 16px;
+  }
+
+  #hero {
+    height: 70vh;
+    margin-top: 45px;
+  }
+
+  #hero h3 {
+    font-size: 11px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+  }
+
+  #hero h1 {
+    font-size: clamp(20px, 5vw, 28px);
+    margin: 15px 0;
+  }
+
+  #hero h2 {
+    font-size: clamp(12px, 2.5vw, 14px);
+    margin-bottom: 25px;
+  }
+
+  .hero-profile-img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .github-layout {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-avatar {
+    margin-bottom: 15px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+    margin: 10px 0 3px 0;
+  }
+
+  .profile-username {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .profile-bio {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+
+  .profile-stats {
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+
+  .stat-item {
+    font-size: 11px;
+  }
+
+  .stat-item strong {
+    font-size: 14px;
+  }
+
+  .profile-links {
+    gap: 5px;
+  }
+
+  .profile-link {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  .profile-link i {
+    width: 14px;
+    margin-right: 6px;
+  }
+
+  .content-card {
+    padding: 18px;
+    border-radius: 6px;
+  }
+
+  .content-section {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+  }
+
+  .section-title h2 {
+    font-size: 10px;
+    padding: 6px 14px;
+  }
+
+  .section-title h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-title p {
+    font-size: 12px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .expertise-item {
+    padding: 16px;
+  }
+
+  .expertise-item .icon i {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .expertise-item h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .expertise-item p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+  }
+
+  .skill-item {
+    padding: 12px;
+  }
+
+  .skill-item i {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .skill-item h3 {
+    font-size: 10px;
+  }
+
+  .experience-timeline {
+    gap: 12px;
+  }
+
+  .experience-item {
+    padding: 15px;
+    border-left-width: 3px;
+  }
+
+  .experience-header h4 {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+
+  .experience-header .company {
+    font-size: 11px;
+  }
+
+  .experience-header .location {
+    font-size: 10px;
+  }
+
+  .experience-date {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .experience-details li {
+    font-size: 11px;
+    margin-bottom: 4px;
+    padding-left: 14px;
+  }
+
+  .experience-details li:before {
+    font-size: 12px;
+  }
+
+  .project-box {
+    min-height: 180px;
+    padding: 15px;
+  }
+
+  .project-content h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .project-content p {
+    font-size: 11px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .project-buttons {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .project-btn {
+    padding: 5px 8px;
+    font-size: 9px;
+  }
+
+  .btn-learn-more {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 10px;
+  }
+
+  #footer {
+    padding: 25px 0 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .footer-section {
+    min-width: auto;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .social-links {
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .social-links a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+
+  .back-to-top {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+/* Extra Small (320px and below) */
+@media (max-width: 320px) {
+  #hero h1 {
+    font-size: clamp(18px, 4vw, 24px);
+  }
+
+  #hero h2 {
+    font-size: clamp(11px, 2vw, 12px);
+  }
+
+  .hero-profile-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .section-title h3 {
+    font-size: 18px;
+  }
+
+  .content-card {
+    padding: 12px;
+  }
+
+  .profile-card {
+    padding: 12px;
+  }
+}

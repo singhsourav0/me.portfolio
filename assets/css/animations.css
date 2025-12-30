@@ -1,0 +1,158 @@
+/* All Animations and Special Effects */
+
+/* Hero Animation */
+#hero {
+  background: linear-gradient(45deg, #1a0033, #2d1b4e, #0f3460, #1a0033);
+  background-size: 300% 300%;
+  animation: colorFlow 12s ease infinite;
+}
+
+@keyframes colorFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 40%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+  z-index: 1;
+}
+
+/* Hero Heading */
+#hero h3 {
+  background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: clamp(18px, 4vw, 28px);
+  padding: 10px 24px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 30px;
+  border: 2px solid rgba(167, 139, 250, 0.3);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typing Animation */
+#typing-subtitle {
+  display: block;
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.8;
+  color: #ffffff;
+  font-weight: 900;
+  margin: 20px 0 40px 0;
+  min-height: 1.5em;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito", sans-serif;
+  word-spacing: 2px;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background: #ffffff;
+  margin-left: 6px;
+  animation: blink 0.7s infinite;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* Profile Username */
+.profile-username {
+  font-size: clamp(16px, 3vw, 20px);
+  margin-bottom: 10px;
+  font-weight: 800;
+  animation: colorCycle 2s ease infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.profile-username:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+}
+
+@keyframes colorCycle {
+  0% { color: #a78bfa; }
+  25% { color: #06b6d4; }
+  50% { color: #7c3aed; }
+  75% { color: #0891b2; }
+  100% { color: #a78bfa; }
+}
+
+/* Hero Profile Image */
+.hero-profile-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero-profile-img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 40px;
+  }
+  
+  #typing-subtitle {
+    font-size: clamp(12px, 2vw, 16px);
+    margin: 15px 0 30px 0;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  #hero h3 {
+    font-size: clamp(16px, 3.5vw, 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-profile-img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+  
+  #typing-subtitle {
+    font-size: clamp(11px, 1.8vw, 14px);
+    margin: 12px 0 25px 0;
+    word-spacing: 1px;
+  }
+  
+  #hero h3 {
+    font-size: clamp(14px, 3vw, 20px);
+    padding: 8px 16px;
+  }
+  
+  .profile-username {
+    font-size: clamp(14px, 2.5vw, 18px);
+    padding: 6px 10px;
+  }
+}
