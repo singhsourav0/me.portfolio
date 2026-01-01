@@ -357,6 +357,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--border);
+  height: auto;
+  overflow: visible;
 }
 
 .section-title {
@@ -1170,6 +1172,276 @@ h1, h2, h3, h4, h5, h6 {
 
   #modalDesc {
     font-size: 13px;
+  }
+}
+
+
+/* Mobile Menu Toggle */
+.mobile-nav-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.navbar.mobile-nav-active ul {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+  gap: 0;
+}
+
+.navbar.mobile-nav-active ul li {
+  padding: 10px 20px;
+}
+
+.navbar.mobile-nav-active ul li a {
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar.mobile-nav-active ul {
+    display: flex !important;
+  }
+
+  #header .container {
+    padding: 0 15px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero h2 {
+    font-size: 16px;
+  }
+
+  .github-layout {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+    position: static;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .section-title h3 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-item h4 {
+    font-size: 16px;
+  }
+
+  .expertise-item p {
+    font-size: 14px;
+  }
+
+  .experience-item h4 {
+    font-size: 15px;
+  }
+
+  .experience-details li {
+    font-size: 14px;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .tech-skill {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .project-box h4 {
+    font-size: 14px;
+  }
+
+  .project-box p {
+    font-size: 13px;
+  }
+
+  .project-btn {
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  #modalTitle {
+    font-size: 18px;
+  }
+
+  #modalDesc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header .container {
+    padding: 0 10px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+
+  #hero h1 {
+    font-size: 22px;
+  }
+
+  #hero h2 {
+    font-size: 14px;
+  }
+
+  .content-card {
+    padding: 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .section-title h2 {
+    font-size: 10px;
+    padding: 6px 14px;
+  }
+
+  .section-title h3 {
+    font-size: 20px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  .profile-name {
+    font-size: 18px;
+  }
+
+  .profile-bio {
+    font-size: 12px;
+  }
+
+  .experience-item h4 {
+    font-size: 14px;
+  }
+
+  .experience-details li {
+    font-size: 13px;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 8px;
+  }
+
+  .tech-skill {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .project-box {
+    padding: 15px;
+    min-height: 200px;
+  }
+
+  .project-box h4 {
+    font-size: 13px;
+  }
+
+  .project-box p {
+    font-size: 12px;
+  }
+
+  .project-btn {
+    padding: 6px 10px;
+    font-size: 9px;
+  }
+}
+
+
+/* Fix content card height */
+.content-card {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  min-height: auto;
+  height: auto;
+}
+
+.content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .content-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-card {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
   }
 }
 

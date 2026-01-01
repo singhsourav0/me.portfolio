@@ -11,6 +11,20 @@
   <meta name="author" content="Sourav Kumar">
   <meta name="robots" content="index, follow">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sourav Kumar",
+    "url": "https://singhsourav0.xyz",
+    "sameAs": [
+      "https://www.linkedin.com/in/singhsourav0",
+      "https://github.com/singhsourav0",
+      "https://www.instagram.com/singhsourav0"
+    ]
+  }
+  </script>
+
   <!-- Open Graph and Twitter Card Meta Tags -->
   <meta property="og:image" content="assets/img/hero-bg.jpg">
   <meta name="twitter:image" content="assets/img/hero-bg.jpg">
@@ -21,8 +35,12 @@
   
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" sizes="48x48" href="favicon.png">
+  <link rel="icon" sizes="96x96" href="favicon.png">
+  <link rel="icon" sizes="128x128" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -122,21 +140,31 @@
             <h3>Learn About <span>My Work</span></h3>
             <!-- <p>Data Professional working across analytics, machine learning, and MLOps, with experience in web scraping and Generative AI</p> -->
           </div>
-          <div class="content">
+                    <div class="content">
             <p>
               I am Sourav Kumar.
               <br><br>
-              A data professional from India with hands-on experience in data analytics, machine learning, and MLOps. Experienced in building end-to-end data solutions, from data analysis to developing and deploying machine learning models.
+              A Computer Science Engineering graduate (2025) with more than two years of hands-on experience in the data domain, working across data analytics, applied statistics, machine learning, deep learning, and Generative AI. My foundation lies in statistical analysis and exploratory data analysis (EDA), including hypothesis testing, regression, and data validation, which I apply to understand and prepare data for downstream modeling.
             <div id="more-content" style="display: none; margin-top: 20px;">
               <p>
-               Proficient in Python, SQL, web scraping, predictive modeling, and deep learning, with a strong focus on applied Generative AI and scalable data systems. I work on solving real-world problems through practical, data-driven solutions.
-                <br><br>
-                Feel free to explore my projects below, with complete implementations linked to their GitHub repositories.
+                I have practical experience of building machine learning models using a range of classical and neural network–based algorithms, with a focus on applying the right techniques. My deep learning work spans convolutional neural networks (CNN) for computer vision, recurrent and transformer-based architectures for NLP, and end-to-end predictive modeling for real-world applications.
+              </p>
+
+              <p style="margin-top: 15px;">
+                Beyond modeling, have exposure of data engineering and system design aspects, including data ingestion, cleaning, feature engineering, and pipeline automation. I have experience designing scalable data workflows, integrating multiple data sources, and preparing data for production-grade machine learning systems.
+              </p>
+
+              <p style="margin-top: 15px;">
+                I am actively involved in MLOps practices, including experiment tracking, versioning of data and models, CI/CD pipelines, containerization using Docker, and deploying models as APIs or applications. I have worked with cloud platforms to deploy, monitor, and maintain machine learning systems in production environments.
+              </p>
+
+              <p style="margin-top: 15px;">
+                More recently, my focus has expanded to applied Generative AI, where I build LLM-powered applications using RAG pipelines, prompt engineering, and vector-based retrieval systems. Across all my work, I prioritize building practical, scalable solutions that translate raw data into reliable, real-world intelligence.
               </p>
             </div>
-            <div class="text-right">
-              <button id="toggle-btn" class="btn-learn-more">Know More</button>
-            </div>
+          </div>
+          <div style="text-align: right; margin-top: 20px;">
+            <button id="toggle-btn" class="btn-learn-more">Know More</button>
           </div>
         </div>
       </section>
@@ -158,8 +186,8 @@
               </div>
               <div class="experience-date">Dec 2025 - Present</div>
               <ul class="experience-details">
-                <li>Selected for district-level Data Analyst role to manage large-scale datasets</li>
-                <li>Responsible for data verification, reporting, and operational analytics</li>
+                <li>Providing real-time technical and analytical support to the district administration by transforming raw school data into actionable insights for district-level planning.</li>
+                <li>Implemented and monitored structured data synchronization and validation workflows between the e-Shikshakosh portal and the national UDISE+ database, ensuring schema-level consistency across teacher, student, and infrastructure datasets.</li>
               </ul>
             </div>
             <div class="experience-item">
@@ -183,8 +211,8 @@
               </div>
               <div class="experience-date">June 2025</div>
               <ul class="experience-details">
-                <li>Conducted Exploratory Data Analysis to assess business risks</li>
-                <li>Created strategic visualizations and dashboards for stakeholders</li>
+                <li>Completed a Tata iQ job simulation on forage that focused on AI driven data analysis, leveraging GenAI for EDA, risk assessment and strategic insights.</li>
+                <li>Proposed a predictive model for delinquency risk, designed an AI-powered collections strategy, and created a stakeholder focused report.</li>
               </ul>
             </div>
           </div>
@@ -554,8 +582,25 @@
       }
     });
   </script>
+  <script>
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    mobileNavToggle.addEventListener('click', () => {
+      navbar.classList.toggle('mobile-nav-active');
+    });
+
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('mobile-nav-active');
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
 
 
 
